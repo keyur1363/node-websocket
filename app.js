@@ -18,6 +18,7 @@ var server = http.createServer(function(request, response) {
     response.end();
 });
 var port = process.env.PORT || '3000';
+console.log('port number is '+port);
 server.listen(port, function() {
     console.log((new Date()) + ' Server is listening on port '+port);
 });
